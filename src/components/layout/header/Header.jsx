@@ -2,6 +2,7 @@ import React, { useEffect, useState, useRef } from "react";
 import { Phone, Globe, ChevronDown, Check } from "lucide-react";
 import logo from "../../../assets/logo.png"
 import "./header.scss"
+import { NavLink } from "react-router-dom";
 
 const LANGUAGES = [
   { code: "RU", label: "RU", flag: "" },
@@ -44,10 +45,10 @@ const Header = () => {
 
             <nav className="header__nav">
               <ul>
-                <li><a className="nav-list" href="/">ГЛАВНАЯ</a></li>
-                <li><a className="nav-list" href="/about">О КОМПАНИИ</a></li>
-                <li><a className="nav-list" href="/supplier">ПОСТАВЩИКИ</a></li>
-                <li><a className="nav-list" href="/contact">КОНТАКТЫ</a></li>
+                <li><NavLink className="nav-list" to={"/"}>ГЛАВНАЯ</NavLink></li>
+                <li><NavLink className="nav-list" to={"/about"}>О КОМПАНИИ</NavLink></li>
+                <li><NavLink className="nav-list" to={"/supplier"}>ПОСТАВЩИКИ</NavLink></li>
+                <li><NavLink className="nav-list" to={"/contact"}>КОНТАКТЫ</NavLink></li>
               </ul>
             </nav>
 
