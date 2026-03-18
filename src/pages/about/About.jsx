@@ -16,6 +16,10 @@ export default function About() {
   const navRef = useRef(null);
 
   useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
+
+  useEffect(() => {
     const onScroll = () => navRef.current?.classList.toggle("scrolled", window.scrollY > 60);
     window.addEventListener("scroll", onScroll);
 

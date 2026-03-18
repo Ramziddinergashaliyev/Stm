@@ -21,12 +21,13 @@ const Footer = () => {
           <div className="footer__col">
             <h3 className="footer__title">КОМПАНИЯ</h3>
             <ul className="footer__list">
-              <li>О компании</li>
+              <li><NavLink to={"/about"}>О компании</NavLink></li>
               <li>
                 <NavLink to={"/news"}>Новости</NavLink>
               </li>
-              <li>Поставщики</li>
-              <li>Контакты</li>
+              <li><NavLink to={"/supplier"}>Поставщики</NavLink></li>
+              <li><NavLink to={"/contact"}>Контакты</NavLink></li>
+              <li><NavLink to={"/catalog"}>Каталог</NavLink></li>
             </ul>
           </div>
 

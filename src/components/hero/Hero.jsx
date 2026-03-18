@@ -163,6 +163,7 @@ import heroSlide1 from "../../assets/hero-parts.jpg";
 import heroSlide2 from "../../assets/hero-slide2.jpg";
 import heroSlide3 from "../../assets/hero-slide3.jpg";
 import "./hero.scss";
+import { NavLink } from "react-router-dom";
 
 const slides = [
   {
@@ -171,7 +172,8 @@ const slides = [
     title: "Высококачественные",
     highlight: "Запчасти",
     desc: "Автомобильные запчасти профессионального уровня. Гарантия качества и надёжности.",
-    cta: "Смотреть товары",
+    cta: "Смотреть Новости",
+    link: "/news",
     tag: "01",
   },
   {
@@ -181,6 +183,7 @@ const slides = [
     highlight: "Мощность",
     desc: "Новейшие турбо- и тормозные системы. Созданы для максимальной производительности.",
     cta: "Подробнее",
+    link: "/about",
     tag: "02",
   },
   {
@@ -190,6 +193,7 @@ const slides = [
     highlight: "Компоненты двигателя",
     desc: "Оригинальные сертифицированные компоненты двигателя высшего класса.",
     cta: "Открыть каталог",
+    link: "/catalog",
     tag: "03",
   },
 ];
@@ -274,12 +278,12 @@ export default function Hero() {
 
             <p className="hero-desc">{slides[active].desc}</p>
 
-            <a href="#categories" className="hero-cta">
+            <NavLink href={slides[active].link} className="hero-cta">
               {slides[active].cta}
               <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">
                 <path d="M5 12h14M12 5l7 7-7 7" />
               </svg>
-            </a>
+            </NavLink>
 
           </div>
         </div>
