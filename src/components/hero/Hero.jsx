@@ -278,7 +278,7 @@ export default function Hero() {
 
             <p className="hero-desc">{slides[active].desc}</p>
 
-            <NavLink href={slides[active].link} className="hero-cta">
+            <NavLink to={slides[active].link} className="hero-cta">
               {slides[active].cta}
               <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">
                 <path d="M5 12h14M12 5l7 7-7 7" />
