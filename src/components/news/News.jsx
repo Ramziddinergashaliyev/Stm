@@ -15,7 +15,7 @@ const NEWS = [
     tag: "АКБ",
     featured: false,
     image: "https://images.unsplash.com/photo-1593941707882-a5bba14938c7?w=600&q=80",
-    number: "04",
+    number: "01",
   },
   {
     id: 5,
@@ -27,7 +27,7 @@ const NEWS = [
     tag: "Подвеска",
     featured: false,
     image: "https://images.unsplash.com/photo-1609521263047-f8f205293f24?w=600&q=80",
-    number: "05",
+    number: "02",
   },
   {
     id: 6,
@@ -39,20 +39,8 @@ const NEWS = [
     tag: "Компания",
     featured: false,
     image: "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=600&q=80",
-    number: "06",
-  },
-  {
-    id: 7,
-    category: "Советы",
-    title: "Признаки износа ремня ГРМ: когда менять и что будет если пропустить",
-    excerpt: "Объясняем симптомы, периодичность замены и почему своевременная замена ремня ГРМ — это страховка от капитального ремонта двигателя.",
-    date: "20 февраля 2025",
-    readTime: "6 мин",
-    tag: "Двигатель",
-    featured: false,
-    image: "https://images.unsplash.com/photo-1568772585407-9361f9bf3a87?w=600&q=80",
-    number: "07",
-  },
+    number: "03",
+  }
 ];
 
 const CATEGORIES = ["Все", "Новинки", "Акции", "Обзор", "Советы", "Компания"];

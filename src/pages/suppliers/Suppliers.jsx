@@ -5,7 +5,7 @@ import "./suppliers.scss";
 const Suppliers = () => {
   return (
     <section className="suppliers container">
-      <h2 className="suppliers__title">Поставщики1</h2>
+      <h2 className="suppliers__title">Поставщики</h2>
 
       <div className="suppliers__grid">
         {LOGO?.map((item) => (
