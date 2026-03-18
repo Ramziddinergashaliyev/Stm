@@ -1,0 +1,53 @@
+.brands {
+  padding: 100px 0px;
+  background: #fff; 
+
+  &__title {
+    text-align: center;
+    font-size: 40px;
+    font-weight: 800;
+    margin-bottom: 70px;
+    letter-spacing: 2px;
+  }
+
+  &__grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 30px 40px;
+    align-items: center;
+    justify-items: center;
+  }
+
+  &__item {
+    transition: 0.3s ease;
+
+    img {
+      max-width: 100px;
+      max-height: 80px;
+      object-fit: contain;
+      transition: .5s;
+      cursor: pointer;
+    }
+
+    &:hover img {
+      filter: grayscale(0%);
+      opacity: 1;
+      transform: scale(1.05);
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .brands {
+    padding: 70px 0;
+
+    &__title {
+      font-size: 30px;
+      margin-bottom: 50px;
+    }
+
+    &__grid {
+      gap: 40px;
+    }
+  }
+}

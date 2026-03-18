@@ -1,0 +1,135 @@
+.features {
+  padding: 40px 0 60px;
+  background: #aaa2;
+  position: relative;
+  overflow: hidden;
+
+  &__header {
+    text-align: start;
+    margin-bottom: 20px;
+
+    h2 {
+      font-size: 40px;
+      font-weight: 900;
+      text-transform: uppercase;
+      color: #000;
+      letter-spacing: 1px;
+
+      span {
+        color: #ff1a1a;
+        text-shadow: 0 0 8px rgba(255, 0, 0, 0.5);
+      }
+    }
+  }
+
+  &__subtitle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    margin-bottom: 18px;
+
+    span {
+      width: 35px;
+      height: 2px;
+      background: #ff1a1a;
+      box-shadow: 0 0 8px rgba(255, 0, 0, 0.6);
+    }
+
+    p {
+      font-size: 13px;
+      letter-spacing: 5px;
+      text-transform: uppercase;
+      color: #ff1a1a;
+    }
+  }
+
+  &__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+
+    @media (max-width: 992px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media (max-width: 600px) {
+      grid-template-columns: 1fr;
+    }
+  }
+}
+
+.feature-card {
+  position: relative;
+  padding: 35px;
+  background: #161616;
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  transition: 0.4s;
+  cursor: pointer;
+  overflow: hidden;
+  border-radius: 10px;
+
+  &:hover {
+    border-color: #ff1a1a;
+    box-shadow: 0 0 20px rgba(255, 0, 0, 0.3);
+  }
+
+  &__number {
+    position: absolute;
+    top: 18px;
+    right: 20px;
+    font-size: 36px;
+    font-weight: 900;
+    color: rgba(255, 255, 255, 0.05);
+    transition: 0.3s;
+  }
+
+  &:hover &__number {
+    color: rgba(255, 0, 0, 0.2);
+  }
+
+  &__icon {
+    width: 55px;
+    height: 55px;
+    margin-bottom: 20px;
+    background: rgba(255, 0, 0, 0.08);
+    border: 1px solid rgba(255, 0, 0, 0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ff1a1a;
+    border-radius: 8px;
+    transition: 0.3s;
+  }
+
+  &:hover &__icon {
+    background: rgba(255, 0, 0, 0.15);
+  }
+
+  h3 {
+    font-size: 15px;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+    color: #fff;
+    font-weight: 600;
+    transition: 0.3s;
+  }
+
+  &:hover h3 {
+    color: #ff1a1a;
+  }
+
+  p {
+    font-size: 14px;
+    color: #bbb;
+    line-height: 1.6;
+  }
+
+  &__line {
+    height: 2px;
+    background: #ff1a1a;
+    margin-top: 22px;
+    width: 0;
+    box-shadow: 0 0 6px rgba(255, 0, 0, 0.5);
+  }
+}
